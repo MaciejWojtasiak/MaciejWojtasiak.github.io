@@ -4,6 +4,13 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
+// const selectElement = (element) => document.querySelector(element);
+
+// selectElement('.fa-bars').addEventListener('click', () => {
+// 	selectElement('.navPanelToggle').classList.toggle('.visible');
+// });
+
+
 (function ($) {
 
 	skel.breakpoints({
