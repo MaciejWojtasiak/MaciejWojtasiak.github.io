@@ -3234,38 +3234,47 @@ body.is-touch .wrapper.style3 {
 	font-weight: normal;
 }
 
+#dropdown-items {
+	transition: all 0.2s ease;
+}
+
+.unactive {
+	max-height: 0;
+	visibility: visible;
+	opacity: 0;
+}
+
+.active {
+	opacity: 1;
+	visibility: visible;
+	max-height: 8rem;
+}
+
 @media screen and (max-width: 980px) {
 
 	#header {
 		display: none;
 	}
 
-	#dropdown-items {
+	/* #navPanel ul li:hover #dropdown-items {
+		opacity: 1;
+		visibility: visible;
+		max-height: 8rem;
+	} */
+
+	/* #dropdown-items-home {
 		max-height: 0;
 		visibility: visible;
 		opacity: 0;
 		transition: all 0.2s ease;
-	}
+	} */
 
-	#navPanel ul li:hover #dropdown-items {
+	/* #navPanel ul li:hover #dropdown-items-home {
 		opacity: 1;
 		visibility: visible;
 		max-height: 8rem;
+	} */
 
-	}
-
-	#dropdown-items-home {
-		max-height: 0;
-		visibility: visible;
-		opacity: 0;
-		transition: all 0.2s ease;
-	}
-
-	#navPanel ul li:hover #dropdown-items-home {
-		opacity: 1;
-		visibility: visible;
-		max-height: 8rem;
-	}
 
 }
 
@@ -3298,13 +3307,6 @@ body.is-touch .wrapper.style3 {
 	.navPanelToggle {
 		display: block;
 	}
-
-
-	#nav {
-		position: fixed;
-	}
-
-
 }
 
 .navPanelToggle *:before {
@@ -3438,6 +3440,12 @@ body.is-touch .wrapper.style3 {
 	transform: translateX(0);
 	box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
 	visibility: visible;
+	z-index: 1;
+}
+
+#navPanel .fa-times {
+	position: absolute;
+	right: 0.4rem;
 }
 
 /* Banner */
