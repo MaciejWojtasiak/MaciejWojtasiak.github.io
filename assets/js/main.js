@@ -16,6 +16,7 @@ exit.addEventListener('click', function () {
 });
 
 offer.addEventListener('click', function () {
+	console.log('klik');
 	document.getElementById("dropdown-items").classList.toggle('active');
 });
 
