@@ -2148,7 +2148,7 @@ input[type="reset"].special,
 input[type="button"].special,
 button.special,
 .button.special {
-	background-color: #00BF1E;
+	background-color: #F01140;
 	color: #ffffff !important;
 }
 
@@ -2960,7 +2960,7 @@ body.is-touch .wrapper.style3 {
 
 .wrapper.style3 {
 	background-attachment: fixed;
-	background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+	background-image: url("images/overlay.png"), url("../../images/heart-hands.jpg");
 	background-position: center center;
 	background-size: cover;
 }
