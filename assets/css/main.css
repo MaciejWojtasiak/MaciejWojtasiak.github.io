@@ -2961,9 +2961,9 @@ body.is-touch .wrapper.style3 {
 }
 
 .wrapper.style3 {
-	background-attachment: fixed;
-	background-image: url("images/overlay.png"), url("../../images/heart-hands.jpg");
-	background-position: center center;
+	background-attachment: scroll;
+	background-image: url("images/overlay.png"), url("../../images/writing-pad.jpg");
+	background-position: center bottom;
 	background-size: cover;
 }
 
