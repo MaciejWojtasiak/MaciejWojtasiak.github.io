@@ -184,6 +184,10 @@ body {
 	width: 80em;
 }
 
+.offer-text {
+	width: 50% !important;
+}
+
 @media screen and (max-width: 1680px) {
 
 	.container.\31 25\25 {
@@ -3291,10 +3295,18 @@ body.is-touch .wrapper.style3 {
 	opacity: 0;
 }
 
+.unactive li {
+	display: none;
+}
+
 .active {
 	opacity: 1;
 	visibility: visible;
 	max-height: 8rem;
+}
+
+.active li {
+	display: block;
 }
 
 @media screen and (max-width: 980px) {
