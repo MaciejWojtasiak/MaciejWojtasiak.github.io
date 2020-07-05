@@ -2581,6 +2581,7 @@ input[type="radio"]+label:before {
 	box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.15);
 	display: block;
 	padding: 2em 1em;
+	text-align: left;
 }
 
 @media screen and (max-width: 736px) {
@@ -2591,6 +2592,13 @@ input[type="radio"]+label:before {
 
 	.image.captioned h3 {
 		padding: 1em;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 979px) {
+	.image.captioned h3 {
+		text-align: center;
 	}
 
 }
@@ -3528,13 +3536,33 @@ body.is-touch #banner {
 
 #banner {
 	padding: 16em 0 13em 0;
-	background-attachment: fixed;
-	background-image: url("images/overlay.png"), url("../../images/banner.jpg");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 	line-height: 1.75;
 	text-align: center;
+}
+
+#banner img {
+	min-height: 80%;
+	min-width: 1024px;
+	filter: brightness(40%);
+	z-index: -1;
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+	/* Specific to this particular image */
+	#banner img {
+		left: 50%;
+		margin-left: -512px;
+		/* 50% */
+	}
 }
 
 #banner:last-child {
@@ -3559,7 +3587,7 @@ body.is-touch #banner {
 @media screen and (max-width: 1280px) {
 
 	#banner {
-		padding: 14em 0 11em 0;
+		padding: 17em 0 11em 0;
 	}
 
 	#banner h2 {
@@ -3571,7 +3599,7 @@ body.is-touch #banner {
 @media screen and (max-width: 980px) {
 
 	#banner {
-		padding: 9em 0 7em 0;
+		padding: 16em 0 7em 0;
 	}
 
 }
@@ -3579,7 +3607,7 @@ body.is-touch #banner {
 @media screen and (max-width: 736px) {
 
 	#banner {
-		padding: 6em 2em 6em 2em;
+		padding: 14em 2em 10em 2em;
 	}
 
 	#banner br {
@@ -3599,8 +3627,9 @@ body.is-touch #banner {
 @media screen and (max-width: 480px) {
 
 	#banner {
-		padding: 4em 2em 4em 2em;
+		padding: 12em 2em 13em 2em;
 	}
+
 
 }
 
