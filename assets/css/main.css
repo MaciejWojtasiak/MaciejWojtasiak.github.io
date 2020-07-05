@@ -3589,7 +3589,7 @@ body.is-touch #banner {
 @media screen and (max-width: 1280px) {
 
 	#banner {
-		padding: 17em 0 11em 0;
+		padding: 15em 0 11em 0;
 	}
 
 	#banner h2 {
@@ -3601,7 +3601,7 @@ body.is-touch #banner {
 @media screen and (max-width: 980px) {
 
 	#banner {
-		padding: 16em 0 7em 0;
+		padding: 12em 0 7em 0;
 	}
 
 
@@ -3610,7 +3610,7 @@ body.is-touch #banner {
 @media screen and (max-width: 736px) {
 
 	#banner {
-		padding: 14em 2em 10em 2em;
+		padding: 12em 2em 10em 2em;
 	}
 
 	#banner br {
