@@ -3538,10 +3538,12 @@ body.is-touch #banner {
 	padding: 16em 0 13em 0;
 	line-height: 1.75;
 	text-align: center;
+	position: relative;
+	overflow: hidden;
 }
 
 #banner img {
-	min-height: 80%;
+	min-height: 70%;
 	min-width: 1024px;
 	filter: brightness(40%);
 	z-index: -1;
@@ -3602,6 +3604,7 @@ body.is-touch #banner {
 		padding: 16em 0 7em 0;
 	}
 
+
 }
 
 @media screen and (max-width: 736px) {
@@ -3622,15 +3625,19 @@ body.is-touch #banner {
 		font-size: 1.25em;
 	}
 
+	#banner img {
+		min-height: 60%;
+		left: 50%;
+		margin-left: -512px;
+		/* 50% */
+	}
 }
 
 @media screen and (max-width: 480px) {
 
 	#banner {
-		padding: 12em 2em 13em 2em;
+		padding: 12em 2em 9em 2em;
 	}
-
-
 }
 
 /* Main */
